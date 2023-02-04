@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<meta name="description" content="A student web page about the musical 'Sunday in the Park with George'">
+			<meta name="keywords" content="musical theatre, Stephen Sondheim, Georges Seurat">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!--The "description" and "keywords" meta tags are there based on in-class discussion of SEO. "Viewport" is there in accordance with best practices outlined on W3Schools-->
+			<link rel="icon" type="image/x-icon" href="images/palette-icon.jpg">
+			<title>My Favourite "Movie"</title>
+		</head>
+		<body>
+			<img src="images/SITPWG-Poster.jpg" alt="Sunday in the Park with George original Broadway cast album cover" width="500" height="auto">
+			<header>
+				<h1>My favourite movie<sup><a href="#fn1" id="ref1">*</a></sup>: <i>Sunday in the Park with George</i></h1>
+				<!--footnote HTML taken from http://karlwinegardner.blogspot.com/2011/02/how-to-create-footnotes-in-html.html-->
+			</header>
+
+			<main>
+				<!--I have chosen to use <p> at the start of a new section of text and <br> for line breaks within a section or between sections-->
+				<h2><i>Sunday in the Park with George</i> is a Pulitzer-prize winning musical by celebrated composer Stephen Sondheim. The first act is a fictionalized account of the life of Georges Seurat during his painting of <i>Un dimanche après-midi à l'Île de la Grande Jatte</i>. The second is a wholly invented story about a descendant of Seurat's in 1982. The show as a whole is concerned with art, meaning, and creative legacy.
+				<br>
+				<hr>
+				<h2>Cast List:</h2>
+				<!--Four top-billed performers in a 16-person cast-->
+					<p><b>Mandy Patinkin</b> as <b>Georges Seurat</b> (Act I) / <b>George</b> (Act II)</p>
+					<p><b>Bernadette Peters</b> as <b>Dot</b> (Act I) / <b>Marie</b> (Act II)</p>
+					<p><b>Barbara Bryne</b> as <b>Old Lady</b> (Act I) / <b>Blair Daniels</b> (Act II)</p>
+					<p><b>Robert Westenberg</b> as <b>Soldier</b> (Act I) / <b>Alex</b> (Act II)</p>
+
+				<h2>Favourite Lyric:</h2>
+				<!--An alternative to "Funniest line" that still represents a highlight from the script-->
+					<p>I chose and my world was shaken/so what?
+					<br>The choice may have been mistaken/the choosing was not --
+					<br>You have to move on...
+
+				<h2>Ratings:</h2>
+					<!--Label tags are used to adhere to accessibility standards as mentioned on w3schools-->
+					<label for "music score bar">Music and Lyrics:</label> <meter id="music score bar" value="5" min="0" max="5">Five stars</meter></br>
+					<label for "script score bar">Script:</label> <meter id="script score bar" value="4" min="0" max="5">Four stars</meter></br>
+					<label for "performances score bar">Performances:</label> <meter id="performances score bar" value="5" min="0" max="5">Five stars</meter></br>
+					<label for "design score bar">Production Design:</label> <meter id="design score bar" value="3.75" min="0" max="5">Three point seven five stars</meter>
+			</main>
+					
+			<footer>
+				<p><small>Created by <b>Dorian Jensen</b> on February 4th, 2023.</small>
+			<hr>
+				<!--Using the footnote to test out <mark> and <u> tags, instead of the "Note to self" from the example webpage-->
+				<sup id="fn1"><a href="#ref1">*.</a>[Technically this is a <mark>filmed stage production</mark>, rather than a conventional <mark>movie</mark>, but it was released as part of PBS's "Great Performances" series and <u>did also receive a home video release</u>]</sup>
+			</footer>
+		</body>
+	</html>
