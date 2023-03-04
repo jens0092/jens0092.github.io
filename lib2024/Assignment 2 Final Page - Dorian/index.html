@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--head contents largely recycled from Assignment 1 and updated accordingly-->
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple page about the discography of Scottish band The Poozies">
+    <meta name="keywords" content="Poozies, Celtic, Scottish, music, discography, reviews">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/harp.png">
+    <title>The Music of the Poozies</title>
+    <!--And here's the new piece, the stylesheet-->
+    <link rel="stylesheet" href="stylesheet1.css">
+</head>
+<body>
+    <!--Throughout the body I am indebted to many classmates. Members of the class freely shared any and all resources they found for understanding HTML/CSS generally and for solving the problems this assignment presented in particular-->
+    <section>
+        <div id="mainhead">
+            <h1>The Music of the Poozies</h1>
+        </div>
+    </section>
+<br> <br>
+<br> <br>
+    <main>
+        <!--The code for the text wrapping is taken from https://codepen.io/paulobrien/pen/RMrrBd-->
+        <div class="wrap">
+            <!--Left half of the text around the inline image. This text is taken from https://poozies.co.uk/ -->
+            <div class="col1">
+                <img class="img" src="images/Wordmark.png" width="400" height="400" alt="The words 'The Poozies' in a stylized font, with the slogan 'Instrumental! Vocal! Sensational!'">
+              <div class="inner">
+                <p>"The Poozies first burst onto the folk scene in 1991, when folk music wore elaborately patterned woolly jumpers and was only seen in dingy back rooms and very late at night on BBC2 - yet from the word go they were breaking out and happily exploring the musical universe.</p>
+
+                <p>The folk scene was then, as now, very male-dominated and so it was a conscious decision back then to be an 'all-female' band. The name came from a den of iniquity frequented by Robert Burns, called Poozie Nancy's, and there is some debate amongst the four founder members as to whether the now-obvious meaning of 'Poozie' was realised back then... but the feeling now is that it's pretty rock and roll!! As with all bands that have been on the road for so long there have been various line-up changes, and although it's probably fair to say a male may feel it's slightly strange to be in a band with this name, there has also always been a natural choice of who will join the band and these people have also just so happened to be female. Throughout the years The Poozies have toured worldwide, and attracted recognition and appreciation for their eclectic choice of material, unusual and exciting arrangements, and heart-tugging vocal harmonies.</p>
+
+                <p>This new line-up is really the best yet with a great collection of cool songs and groovy tunes. Anchored by the bass end of Mary Macmaster's electro-harp the band swings like a monster with twin fiddles playing off each other and then the sound comes right down to pin-drop quiet for a gorgeous song."</p>
+
+                <p class="attribution">-- The Poozies, official website</p>
+              </div>
+            </div>
+            <!--Right half of the text. This is original content by me.-->
+            <div class="col2">
+                <img class="img" src="images/Wordmark.png" width="400" height="400" alt="The words 'The Poozies' in a stylized font, with the slogan 'Instrumental. Vocal. Sensational.'">
+                <div class="inner">
+                <p>I discovered the Poozies in 2001 or 2002, when a track of theirs was on a Celtic music compilation I picked up in a Shoppers Drug Mart, of all places (remember when Shoppers stocked CDs as endcaps?). There were a few groups on there I enjoyed, but the Poozies stood out for their unusual mix of instruments and their excellent vocal harmonies. A few months later I found their album <i>Changed Days, Same Roots</i> in a small Winnipeg music store, and my love affair with their work was cemented. </p>
+
+                <p>I think they're one of the most interesting Celtic groups out there in terms of their compositional and arrangement style, and their longevity is incrediby impressive, with their enduring through many many lineup changes. As a former harpist, I especially love the way they use harp in their arrangements, but the use of every other instrument is also thoughtful and consistently surprising.</p>
+
+                <p>I think most of their albums are excellent, but <i>Changed Days, Same Roots</i>, which I highlighted on this page, remains my favourite -- and not just because it was my first. It's got great tracks like "Tam" and "Throw the Ball", and was the first album where a fiddle was part of their core lineup. They do great things with the interplay of fiddle and harp, and at this point all the singing voices in the group blend very well, with no clear "lead" (which is a problem at other points in their career -- Kate Rusby and Sally Barker both have voices that demand attention). A great album all around.</p>
+
+                <p>If this page has made you want to check out the Poozies, each album cover links to where that album can be streamed (if available) or purchased!</p>
+
+                <p class="attribution">- Commentary by Dorian Jensen</p>
+              </div>
+            </div>
+          </div>
+        <br><br>
+        <hr>
+        <br>
+        <div id="favalbum">
+            <a href="https://www.allcelticmusic.com/music/d8ff9f90-c13f-11e0-b0f1-12313d02ceaa/Changed_Days%2C_Same_Roots.html"><img src="images/Roots.jpg" width="450" height="450" alt="The cover of the Poozies album 'Changed Days, Same Roots', with a photo of a bare tree on a red grassy plain"></a>
+        </div>
+        <br><br>
+
+        <!--Watermark code. Developed with significant support from classmates.-->
+        <div id="watermark">
+            <div id="wm_inner">
+                <!--Image for watermark taken from https://www.mudchutney.co.uk/collections/all/the-poozies-retro_design and modified through Photopea-->
+                <img id="watermark" src="images/retrologo.png">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <br><br><br><br><br>
+        <hr>
+        <br><br>
+        <!--Flexbox time-->
+        <div id="albumgrid">
+            <!--All album images taken from Discogs-->
+            <div class="albums"><a href="https://open.spotify.com/album/3oo9oTqSvCOHRaM0jKt1PJ?si=DNp_FkPRSS6sBUCv5OIEkw"><img src="Images/Chantoozies.jpg" width="250" height="250" alt="The cover of the Poozies album 'Chantoozies'"></a></div>
+            <div class="albums"><a href="https://open.spotify.com/album/2ASQ53krukon1wcnVo69h1?si=JvkVA2dpR2yvB3rGCg-Jag"><img src="Images/Dansoozies.jpg" width="250" height="250" alt="The cover of the Poozies album 'Dansoozies'"></a></div>
+            <div class="albums"><a href="https://open.spotify.com/album/43asZiKbddt1c78J4TXtQu?si=ThoHQXZnRY-pFxt1InMvRA"><img src="Images/Blue.jpg" width="250" height="250" alt="The cover of the Poozies album 'Infinite Blue'"></a></div>
+            <div class="albums"><a href="https://thepoozies1.bandcamp.com/album/yellow-like-sunshine"><img src="Images/Yellow.jpg" width="250" height="250" alt="The cover of the Poozies album 'Yellow Like Sunshine'"></a></div>
+            <div class="albums"><a href="https://thepoozies1.bandcamp.com/album/into-the-well-2"><img src="Images/Well.jpg" width="250" height="250" alt="The cover of the Poozies album 'Into the Well'"></a></div>
+            <div class="albums"><a href="https://thepoozies1.bandcamp.com/album/punch-2"><img src="Images/Punch.jpg" width="250" height="250" alt="The cover of the Poozies album 'Punch'"></a></div>
+        </div>
+    </footer>
+</body>
+</html>
