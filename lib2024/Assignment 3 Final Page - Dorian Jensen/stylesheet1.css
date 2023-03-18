@@ -1,0 +1,167 @@
+body {
+    background-color: #778899;
+}
+p {
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 5px;
+}
+
+/*I established a class for when I wanted a square to have a "header". Wasn't sure how <h#> tags would interact with what I'm doing, so found a workaround */
+.headline {
+    font-style: italic;
+    font-size: 20px;
+}
+
+#squaresrow {
+    display: flex;
+    align-items: left;
+    flex-flow: column nowrap;
+}
+
+/*The first of two key animation tactics that make the whole page work -- moving over a given square makes it eight times as wide but keeps its content centred. Note I don't specify a transformed height here*/
+.square {
+    height: 75px;
+    width: 75px;
+    transition: 1.8s;
+    align-content: center;
+}
+.square:hover {
+    width: 600px;
+}
+
+/*And the second piece. My text is in the squares, so hovering over the square also hovers over the text. When that happens, it becomes visible (it's always there, just completely transparent normally). As the square grows, the text alignment follows its new shape. The transition delay here just makes it look slightly better than if it starts right away.*/
+.text {
+    color: black;
+    opacity: 0;
+    transition: 1.5s;
+    transition-delay: 0.5s;
+    text-align: center;
+    font-size: 15px;
+}
+.text:hover {
+    opacity: 1;
+}
+.album {
+    opacity: 0;
+    transition: 2s;
+    text-align: center;
+}
+.album:hover {
+    opacity: 1;
+}
+/*The .album transition is similar to the .text one but I didn't want the delay*/
+
+.discog {
+    list-style-type: none;
+}
+
+#coral {
+    background-color: #EF6F6E;
+}
+#coral:hover {
+    height: 100px;
+}
+/*Every square has a unique height value for its transition, to best fir the content for that square*/
+
+#sandstone {
+    background-color: #EDD0A6;
+}
+#sandstone:hover {
+    height: 75px;
+}
+
+#indigo {
+    background-color: #232D84;
+}
+#indigo:hover {
+    height: 600px;
+}
+#cover {
+    width: 75px;
+    height: 75px;
+    transition: 2s;
+}
+#cover:hover {
+    width: 560px;
+    height: 560px;
+}
+/*Because this one is an image and I wanted it to grow, it needed its own rules for the transition.*/
+
+#vantablack {
+    background-color: #0A0502;
+}
+#vantablack:hover {
+    height: 320px;
+}
+#vantablacktext {
+    opacity: 0;
+    color: white;
+    transition: 1.5s;
+    transition-delay: 1s;
+    text-align: center;
+    font-size: 15px;
+}
+#vantablacktext:hover {
+    opacity: 1;
+    color: white;
+}
+/*Same structure as earlier text rules but gets to be on its own because I needed a different font color for legibility.*/
+
+#sienna {
+    background-color: #B14215;
+}
+#sienna:hover {
+    height: 300px;
+}
+
+#cerulean {
+    background-color: #006EAD;
+}
+#cerulean:hover {
+    height: 250px;
+}
+
+#opal {
+    background-color: #CDC7C9;
+}
+#opal:hover {
+    height: 250px;
+}
+
+#saffron {
+    background-color: #FBBE01;
+}
+#saffron:hover {
+    height: 250px;
+}
+
+#crimson {
+    background-color: #C5112C;
+}
+#crimson:hover {
+    height: 180px;
+}
+.cdlink:link {
+    color: #FFFAFA;
+}
+.cdlink:visited {
+    color: #778899;
+}
+/*As with the #vantablack text, I needed to change these links so they'd read appropriately on the #crimson and #cobalt squares*/
+
+#cobalt {
+    background-color: #004D9D;
+}
+#cobalt:hover {
+    height: 120px;
+}
+
+#umber {
+    background-color: #9C7E02;
+}
+#umber:hover {
+    height: 150px;
+}
+#umbertext {
+    font-size: 12px;
+}

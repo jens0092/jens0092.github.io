@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--head contents largely recycled from Assignment 1 and updated accordingly-->
+    <meta charset="UTF-8">
+    <meta name="description" content="A minimalist page about a beautiful ambient/classical record">
+    <meta name="keywords" content="Dawn Richard, Spencer Zahn, 2022 music, music, Pigments, reviews, ambient music, contemporary classical">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/cwheel.png">
+    <title>Pigments</title>
+    <link rel="stylesheet" href="stylesheet1.css">
+</head>
+<body>
+    <div id="squaresrow">
+      <!--My beautiful cubes. Each 'pigment' has a shared class for animations that behave the same for all of them, but a unique ID for fine-tuning purposes-->
+        <div class="square" id="coral">
+            <div class="text" id="coraltext"><p class="headline">Pigments</p></div>
+        </div>
+        <div class="square" id="sandstone">
+            <div class="text" id="sandstonetext"><p>An album by Dawn Richard and Spencer Zahn</p></div>
+        </div>
+        <div class="square" id="indigo">
+    <!--Had to give "album" its own div class, because I wanted it to behave a little differently from my text divs. This is the only pigment that contains an image instead of words, so it gets to be special.-->
+            <div class="album"><p><a href="https://dawnrichard.bandcamp.com/album/pigments"><img src="images/pigmentscover.jpg" id="cover" alt="An album cover showing a woman below  icy rocks. On the left is a vertical line of seven solid-colour squares"></a></p></div>
+        </div>
+        <div class="square" id="vantablack">
+            <div class="text" id="vantablacktext">
+                <p class="headline">Dawn Richard</p>
+                <p>Dawn Richard treats Louisiana Creole culture, New Orleans bounce, and Southern Swag as elemental, allowing Dawn to weave in and out of house, footwork, R&B, and more. As she says, "I am the genre."</p>
+                <p>As a founding member of Danity Kane, and later with Diddy's Dirty Money, Dawn was able to explore the ins and outs of commercial pop music. As a solo artist, she opted to self-release her music. Over the span of five critically acclaimed full-length albums, Dawn has made the message clear that she will not bow down or bend to industry norms.</p>
+                <p><i><a href="https://www.mergerecords.com/artist/dawn_richard">- Merge Records artist bio</a></i></p>
+            </div>
+        </div>
+        <div class="square" id="sienna">
+            <div class="text" id="siennatext">
+                <p class="headline">Spencer Zahn</p>
+                <p>The music of multi-instrumentalist Spencer Zahn is marked by openness: spacious sonic landscapes, rich with contributions from his creative community. [...]</p>
+                <p>Born in Massachusetts, Zahn started playing the bass at age 12. Since moving to New York in the mid-2000s, he has worked as a touring musician, performing live with a range of acts across the genre spectrum. </p>
+                <p><i><a href="https://www.spencerzahn.net/bio">- Bio from Zahn's website</a></i></p>
+            </div>
+        </div>
+        <div class="square" id="cerulean">
+            <div class="text" id="ceruleantext">
+                <p>A stark departure from the electro-revival sound of [Dawn] Richard's last record Second Line, Pigments sees the New Orleans artist collaborating with multi-instrumentalist, producer and composer Spencer Zahn for an expansive new album that blends together elements of classical, jazz and ambient electronica. Spread across a body of several movements, the record eschews house beats and catchy hooks for a rolling soundscape of soft saxophone melodies, blooming string sections and shimmering ambiance as Richard's vocals cut through the watercolored fog, floating in and out of focus as the album's tide ebbs and flows. </p>
+                <p><i><a href="https://www.papermag.com/dawn-richard-spencer-zahn-pigments-2658508243.html#rebelltitem31">- Interview with Matt Moen at</i>Paper <i>magazine</a></i></p>
+            </div>
+        </div>
+        <div class="square" id="opal">
+            <div class="text" id="opaltext">
+                <p>Richard has hinted in the past at being enthralled with the worlds of neoclassical and new age--her own father, to whom the album is dedicated, has a master's in music theory, and Richard has spoken about growing up surrounded by Debussy, Bach, and Enya. As the album nears its end, Richard and Zahn begin to introduce a club-like thump to the music once more, first with a minimally pinging-ponging drum machine on "Crimson," then in a full-on groove on the get-up-and-move closer "Umber." It's these moments when Zahn and Richard come together that make Pigments such a remarkable endeavor, one that combines the properties of both artists' music until it becomes a pristine, unified feeling.</p>
+                <p><i><a href="https://pitchfork.com/reviews/albums/dawn-richard-spencer-zahn-pigments/">- Review by Sam Goldner at</i> Pitchfork </a></p>
+            </div>
+        </div>
+        <div class="square" id="saffron">
+            <div class="text" id="saffrontext">
+                <p>I chose to highlight <i>Pigments</i> because of all the 500+ albums I listened to in 2022, it's easily in the top 2 or 3. I've been a fan of Richard's for years, and I'm always struck by how she continues to push forward artistically with every new project -- she's never been content to coast. This collaboration with Zahn is so lushly orchestrated, and the way her voice interplays with the woodwinds is extraordinarily beautiful to me. I also have a soft spot for works that are constructed <i>as albums</i> rather than as a collection of unrelated songs, and the way <i>Pigments</i> flows continuously from the first clarinet in "Coral" to the final fade of "Umber" is incredibly well-paced and thoughtful. Just a standout work start to finish.</p>
+                <p><i>- Me, Dorian</i></p>
+            </div>
+        </div>
+        <div class="square" id="crimson">
+            <div class="text" id="crimsontext">
+                <p class="headline">Other music by Richard</p>
+                <ul class="discog">
+                    <!--The class for the links here is literally just to ensure they're readable on the hypersaturated backgrounds-->
+                    <li><a class="cdlink" href="https://dawnrichard.bandcamp.com/album/goldenheart">Goldenheart</a></li>
+                    <li><a class="cdlink" href="https://dawnrichard.bandcamp.com/album/blackheart">Blackheart</a></li>
+                    <li><a class="cdlink" href="https://dawnrichard.bandcamp.com/album/redemption">REDEMPTION</a></li>
+                    <li><a class="cdlink" href="https://dawnrichard.bandcamp.com/album/second-line">Second Line</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="square" id="cobalt">
+            <div class="text" id="cobalttext">
+                <p class="headline">Other music by Zahn</p>
+                <ul class="discog">
+                    <li><a class="cdlink" href="https://spencerzahn.bandcamp.com/album/sunday-painter">Sunday Painter</a></li>
+                    <li><a class="cdlink" href="https://spencerzahn.bandcamp.com/album/pale-horizon">Pale Horizon</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="square" id="umber">
+            <div class="text" id="umbertext">
+                <p><i>Webpage by Dorian Jensen</i></p>
+                <p><i>Algonquin College Library and Information Technician Program</i></p>
+                <p><i>LIB2024 - Internet Applications</i></p>
+                <p><i>March, 2023</i></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
