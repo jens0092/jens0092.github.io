@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--head contents largely recycled from Assignment 2 and updated accordingly-->
+        <meta charset="UTF-8">
+        <meta name="description" content="A simple tool for converting Celsius and Fahrenheit temperatures">
+        <meta name="keywords" content="tools, browser apps, temperature conversion, celsius, fahrenheit">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="thermicon.png">
+        <title>Temperature Conversion Utility</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="mainhead">
+        <p>Temperature Conversion Utility</p>
+        <hr>
+    </div>
+    <hr>
+    <!--This section of the code is from https://codingartistweb.com/2021/04/javascript-temperature-conversion-celsius-fahrenheit/-->
+    <div class="wrapper">
+        <div class="container">
+            <img id="thermometer" src="thermicon.png" alt="a black-and-white clip art thermometer">
+        </div>
+        <div class="container">
+            <label for="celsius">Celsius</label>
+            <input type="text" id="celsius" oninput= "celToFar()">
+        </div>
+        <div class="container">
+            <label for="fahrenheit">Fahrenheit</label>
+            <input type="text" id="fahrenheit" oninput = "farToCel()">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
