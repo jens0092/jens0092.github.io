@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--head contents largely recycled from Assignment 2 and updated accordingly-->
+    <meta charset="UTF-8">
+    <meta name="description" content="A fan website for Bushiroad's 'Bang Dream' music franchise">
+    <meta name="keywords" content="music, rhythm game, live bands, bushiroad, bang dream, poppin'party, roselia, raise a suilen, morfonica, afterglow, jpop, anisong, fansite">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../files-main/Michelle.png">
+    <title>BanG Dream! An Introduction</title>
+    <link rel="stylesheet" href="../css/stylesmain.css">
+</head>
+<body>
+    <!--Basic layout is borrowed from Assignment 2. Image sources for all pages are cited in report and in a separate document (citations.docx) available in github - this is an image-heavy assignment and citing them all within the code would have created major clutter-->
+    <main>
+    <section>
+        <div class="maincontent">
+            <img id="wordmark" src="../files-main/logo-bd.png" width="1000" height="226" alt="the words 'Bang Dream!' in a bold pink font with decorative stars">
+        </div>
+    </section>
+    <br><br><br><br>
+    <section>
+        <div class="maincontent">
+            <img id="keyart" src="../files-main/keyart.png" width="1000" height="auto" alt="an anime-style illustration of seven girls on a concert stage. They are reaching out and inviting the viewer to join them">
+            <p class="maintext">The <i>BanG Dream!</i> project is a Japanese multimedia franchise which began in 2016. Including animated films and television, a rhythm game, and live concerts, it is expansive -- and has grown over time. The franchise's primary focus is seven bands, four who regularly perform live and three who primarily exist in animated media, with members making only occasional live appearances. Through this site, I want to introduce you to those seven bands.</p>
+            <p class="maintext">I've been a fan of the franchise since shortly after the rhythm game launched its English-language version, in April of 2018. I keep up with music releases and concerts, I follow the storyline of the fictional universe, and I own merchandise for a number of the bands. I think even if you're wholly uninterested in the fictional trappings, there's some fun music for people who like high-energy songs that cut across a variety of genres. My hope is that somewhere on this site you'll find at least one group you can become a fan of!</p>
+        </div>
+    </section>
+    <br><br>
+    </main>
+    <section>
+        <div class="navcontent">
+            <!--The navcontent is set up to make use of flexbox principles we learned in assignment 2. Both the shared class and the unique IDs for elements here are important in the linked CSS document-->
+            <p class="navnote">Click the icons below to learn more about the bands!</p>
+            <div id="navbar">
+                <!--These icons are not in an arbitrary order - they correspond to the order of the characters in the key image above-->
+            <div class="icon" id="hhw">
+                <a href="../html/harohapi.html"><img class="button" src="../files-main/icon-hhw.png" alt="a striped yellow circle with a flag planted on top"></a>
+            </div>
+            <div class="icon" id="rose">
+                <a href="../html/roselia.html"><img class="button" src="../files-main/icon-rose.png" alt="a stylized dark blue rose"></a>
+            </div>
+            <div class="icon" id="ag">
+                <a href="../html/afterglow.html"><img class="button" src="../files-main/icon-ag.png" alt="a stylized red padlock containing a stylized letter A"></a>
+            </div>    
+            <div class="icon" id="popi">
+                <a href="../html/popipa.html"><img class="button" src="../files-main/icon-popi.png" alt="a pink star containing the letter p"></a>
+            </div>
+            <div class="icon" id="moni">
+                <a href="../html/morfonica.html"><img class="button" src="../files-main/icon-moni.png" alt="a stylized light blue butterfly"></a>
+            </div>
+            <div class="icon" id="ras">
+                <a href="../html/suilen.html"><img class="button" src="../files-main/icon-ras.png" alt="a stylized set of teal headphones with cat ears"></a>
+            </div>
+            <div class="icon" id="pasu">
+                <a href="../html/pasupare.html"><img class="button" src="../files-main/icon-pasu.png" alt="a simple mint-green rosette"></a>
+            </div>
+            </div>
+        </div>
+        </section>
+        <footer>
+            <p class="navnote">You can always click Michelle to return to this page!</p>
+            <div id="Michelle">
+            <a href="../html/index.html"><img class="button" src=../files-main/Michelle.png width=30px height=30px alt="a cartoony image of a pink bear mascot"></a>
+            </div>
+        </footer>  
+</body>
+</html>

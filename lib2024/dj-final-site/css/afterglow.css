@@ -1,0 +1,135 @@
+/*For comments see popipa.css: everything said there applies here and this page has no additional or changed code*/
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../files-main/bgpattern.png);
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.maincontent {
+    background-color: #FFDDDD;
+    padding: 10px 10px 10px 10px;
+    border: 5px groove #E53344;
+    margin: auto;
+    max-width: 1280px;
+}
+.maintext {
+    font-size: 20px;
+    text-align: justify;
+}
+hr {
+    border: 1px dashed #E53344;
+}
+.castlist {
+    font-size: 20px;
+    font-weight: lighter;
+}
+ul {
+    list-style-image: url('../files-ag/icon-ag.png');
+    list-style-position: inside;
+}
+li {
+    padding-bottom: 7px;
+}
+.music-container {
+    background-color:#FFDDDD;
+    box-shadow: inset -1px -1px 5px #E53344, inset 1px 1px 5px #E53344;
+    display: flex;
+    padding: 20px 30px;
+    position: relative;
+    margin: 100px 0;
+    z-index: 10;
+}
+.img-container {
+    position: relative;
+    width: 110px;
+}
+.img-container::after {
+    content: '';
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%,50%);
+}
+.img-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 110px;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+.music-container.play .img-container img {
+    animation-play-state: running;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.action-btn {
+    border: 0;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+    background-color:#E53344;
+}
+.action-btn.action-btn-big {
+    font-size: 25px;
+    outline: none;
+}
+.action-btn:focus {
+    outline: 0;
+}
+.music-info {
+    background-color:transparent;
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100%-40px);
+    padding: 10px 10px 10px 150px;
+    opacity: 0;
+    transform: translateY(0%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+    z-index: 0;
+}
+.music-container.play .music-info {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+.music-info h4 {
+    margin: 0;
+}
+#Michelle {
+    transition: 10s;
+}
+#Michelle:hover {
+    transform: rotate(1080deg);
+}

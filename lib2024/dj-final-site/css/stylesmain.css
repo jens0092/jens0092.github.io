@@ -1,0 +1,95 @@
+body {
+    background-image: url(../files-main/bgpattern.png);
+    /* Background image is from https://bang-dream-gbp-en.bushiroad.com/ */
+    text-align: center;
+}
+
+/*This basic content format is used across all the subpages as well for consistency*/
+.maincontent {
+    background-color: lightpink;
+    padding: 10px 10px 10px 10px;
+    border: 5px groove rgb(243, 74, 74);
+    margin: auto;
+    max-width: 1280px;
+}
+.maintext {
+    font-size: 20px;
+    text-align: justify;
+}
+#keyart {
+    margin-top: 5px;
+    border: 2px black outset;
+}
+/*code for the navbar borrowed from what was used for the images at the bottom of assignment 2, which it closely resembles*/
+#navbar {
+    background-color: lightpink;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 3;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 1280px;
+    padding: 0 1%;
+  }
+.navnote {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.navcontent {
+    background-color: lightpink;
+    padding: 5px 5px 5px 5px;
+    border: 5px groove rgb(243, 74, 74);
+    margin: auto;
+    max-width: 1280px;
+}
+/*The code to make my icons circular was ALSO based on what I learned in assignment 2, but this time it's from the main central image!*/
+.icon {
+    border-radius: 50%;
+    border: 3px inset;
+    padding: 8px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+/*I wanted some kind of effect on the icons. Experimented with a spin but didn't like it, so now they just grow a little*/
+.icon:hover {
+    transform: scale(1.1, 1.1);
+}
+/*These colours can be considered a "key" of sorts and will be seen on all the subpages as well*/
+#hhw {
+    background-color:#FFFFDD;
+    border-color:#FFDD00;
+}
+#rose {
+    background-color:#DDDDFF;
+    border-color:#3344AA;
+}
+#ag {
+    background-color:#FFDDDD;
+    border-color:#E53344;
+}
+#popi {
+    background-color:#FFDDEE;
+    border-color:#FF3377;
+}
+#moni {
+    background-color:#bbeaff;
+    border-color:#33AAFF;
+}
+/*This is the one exception to the colour-consistency rule, next to the other buttons the blue background & purple border didn't read well so I flipped it and adjusted saturation levels*/
+#ras {
+    background-color:#c0a3f3;
+    border-color:#39C9C5;
+}
+#pasu {
+    background-color:#DDFFEE;
+    border-color:#33DDAA;
+}
+/*Now HERE is where I decided the spin animation was fun*/
+#Michelle {
+    transition: 10s;
+}
+#Michelle:hover {
+    transform: rotate(1080deg);
+}

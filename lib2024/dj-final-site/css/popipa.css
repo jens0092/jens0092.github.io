@@ -1,0 +1,150 @@
+/*The below imports the font used in Doro Onome's tutorial (linked below), which allows my play/rewind/fast-forward buttons to display correctly*/
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+* {
+    box-sizing: border-box;
+}
+/*As with the HTML, this CSS sheet sets the pattern for all the other subpages. The only changes are specific external assets and the colours used on each page*/
+body {
+    background-image: url(../files-main/bgpattern.png);
+    /* Background image is from https://bang-dream-gbp-en.bushiroad.com/ */
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.maincontent {
+    background-color: #FFDDEE;
+    padding: 10px 10px 10px 10px;
+    border: 5px groove #FF3377;
+    margin: auto;
+    max-width: 1280px;
+}
+.maintext {
+    font-size: 20px;
+    text-align: justify;
+}
+hr {
+    border: 1px dashed #FF3377;
+}
+.castlist {
+    font-size: 20px;
+    font-weight: lighter;
+}
+/*Having plain bullets for the list felt bland so I styled them with the band icons, which otherwise only show up in the header bar at the top of the browser window and can easily be missed*/
+ul {
+    list-style-image: url('../files-popi/icon-popi.png');
+    list-style-position: inside;
+}
+li {
+    padding-bottom: 7px;
+}
+/* all music coding thanks to Doro Onome at https://www.section.io/engineering-education/how-to-build-a-music-player-with-vanilla-javascript/ */
+/*The music-container defines the space in which my player will appear. For my purposes I wanted it to resemble the content boxes elsewhere on the page, so I borrowed their formatting and only tweaked the border*/
+.music-container {
+    background-color:#FFDDEE;
+    box-shadow: inset -1px -1px 5px #FF3377, inset 1px 1px 5px #FF3377;
+    display: flex;
+    padding: 20px 30px;
+    position: relative;
+    margin: 100px 0;
+    z-index: 10;
+}
+/*These next blocks ensure that the album art displays and animates with the 'cd' effect I wanted*/
+.img-container {
+    position: relative;
+    width: 110px;
+}
+/*This little section makes the circular 'hole' at the centre of the disc*/
+.img-container::after {
+    content: '';
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%,50%);
+}
+/*This makes my album art a circle, defines its spinning animation, and also ensures that the spinning doesn't happen when I don't want it to*/
+.img-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 110px;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+/*This ensures the spinning animation DOES happen when I DO want it to, specifically connecting it to .music-container also having the .play class. This will make sense with the JS*/
+.music-container.play .img-container img {
+    animation-play-state: running;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+/*Here's where my buttons get styled; this section replaces the bands navbar from the main page*/
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.action-btn {
+    border: 0;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+    background-color:#FF3377;
+}
+.action-btn.action-btn-big {
+    font-size: 25px;
+    outline: none;
+}
+.action-btn:focus {
+    outline: 0;
+}
+/*When you press play, a song title pops up! This section is what makes that happen*/
+.music-info {
+    /*When no song is playing all of this lurks behind the music player and is completely transparent*/
+    background-color:transparent;
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100%-40px);
+    padding: 10px 10px 10px 150px;
+    opacity: 0;
+    transform: translateY(0%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+    z-index: 0;
+}
+/*But when that 'play' selector is triggered, it slides vertically up and becomes visible!*/
+.music-container.play .music-info {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+/*The h4 is actually blank in the HTML -- but this will make sense with the JS script*/
+.music-info h4 {
+    margin: 0;
+}
+/*Here's Michelle again. She does the same thing as on the main page and serves as the link that gets you back there*/
+#Michelle {
+    transition: 10s;
+}
+#Michelle:hover {
+    transform: rotate(1080deg);
+}

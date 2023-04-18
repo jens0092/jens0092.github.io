@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--head contents largely recycled from Assignment 2 and updated accordingly-->
+    <!--This page serves as a 'pattern guide' for the subpages dedicated to each other band. The only changes are to linked external assets and to the descriptive text: all code is identical.-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Descriptive information about the band Poppin'Party, with three sample songs">
+    <meta name="keywords" content="Poppin'party, jpop, anisong, kasumi toyama, aimi, bang dream">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../files-popi/icon-popi.png">
+    <title>Poppin'Party! An Introduction</title>
+    <!--First stylesheet from Doro Onome and is used to make the music player work correctly-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/popipa.css">
+</head>
+<body>
+    <main>
+        <!--Three main sections: logo/header area, informational text (with illustrative image), and music player. The first two use similar methods to previous assignments.-->
+    <section>
+        <div class="maincontent">
+            <img id="logo" src="../files-popi/logo-popi.png" width="1000px" height="200px" alt="Poppin'Party's logo. The band's name in a black-and-pink bubbly font with star-shaped details.">
+        </div>
+    </section>
+    <br><br><br><br>
+    <section>
+        <div class="maincontent">
+            <img id="bandpic" src="../files-popi/band-popi.png" width="1000px" height="auto" alt="A promo shot of the five real-world Poppin'Party musicians, posing with their instruments in black and white houndstooth costumes with colourful detailing.">
+            <p class="maintext">In-fiction, Poppin'Party are a group of girls who met by chance and who started a band due to Kasumi Toyama's fervent desire to recapture the "sparkling, heart-pounding" feeling she gets when looking at the stars. Her passion for the experience of playing music convinced the others to join her, and they've been playing together ever since.</p>
+            <p class="maintext">Outside the fiction, Poppin'Party was the first band to be revealed and to begin playing live shows, serving in many ways as the 'face' of the franchise. They play pretty uncomplicated anisong-style pop-rock, held together by the voice of Aimi, who plays Kasumi. When the franchise began, most members of Poppin'Party were just learning their instruments, but after six years of live performance they're all relatively skilled at this point.</p>
+            <hr>
+                <h3>Characters, Cast and Instruments</h4>
+            <div class="castlist"></div>
+                <ul>
+                    <li>Vocals/Guitar - Kasumi Toyama (Aimi)</li>
+                    <li>Guitar - Tae Hanazono (Sae Otsuka)</li>
+                    <li>Bass - Rimi Ushigome (Rimi Nishimoto)</li>
+                    <li>Drums - Saya Yamabuki (Ayaka Ohashi)</li>
+                    <li>Piano - Arisa Ichigaya (Ayasa Itou)</li>
+                 </ul>
+            </div>
+        </div>
+        <!--The code below is based on Doro Onome's music-player tutorial at https://www.section.io/engineering-education/how-to-build-a-music-player-with-vanilla-javascript/ -->
+        <div class="music">
+            <!--The IDs in this section are particularly important, as they will be called for very specific functions in the JS document.-->
+            <h3>Poppin'Party - Sample Tracks</h3>
+            <div class="music-container" id="music-container">
+                <div class="music-info">
+                    <h4 id="songtitle"></h4>
+                </div>
+                <!--The links to a specific song here determine which is the first to load on the page, but JS lets the player ultimately cycle through three songs.-->
+                <audio src="../files-popi/Returns.mp3" id="audio"></audio>
+                <div class="img-container">
+                    <img src="../files-popi/Returns.jpg" alt="the cover art for a Poppin'Party single" id="cover">
+                </div>
+                <div class="navigation">
+                    <!--These buttons display correctly thanks to the custom font loaded through Onome's stylesheet, linked in the head.-->
+                    <button id="prev" class="action-btn">
+                        <i class="fas fa-backward"></i>
+                    </button>
+                    <button id="play" class="action-btn action-btn-big">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button id="next" class="action-btn">
+                        <i class="fas fa-forward"></i>
+                    </button>
+                </div>
+            </div>
+            <script src="../js/popiscript.js"></script>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <!--Michelle is a bear and she lives down here-->
+        <p class="navnote">Click Michelle to return to the homepage!</p>
+        <div id="Michelle">
+        <a href="index.html"><img class="button" src=../files-main/Michelle.png width=30px height=30px alt="a cartoony image of a pink bear mascot"></a>
+        </div>
+    </footer>  
+</body>
+</html>
